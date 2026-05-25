@@ -1,1 +1,56 @@
 
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro Paraná - Calculadora de Preços</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🌱 Agro Paraná</h1>
+    <p>Calculadora de preços dos produtos do agro paranaense</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Calcular Valor da Produção</h2>
+
+      <label>Produto:</label>
+      <select id="produto">
+        <option value="soja">Soja</option>
+        <option value="milho">Milho</option>
+        <option value="trigo">Trigo</option>
+        <option value="cafe">Café</option>
+      </select>
+
+      <label>Quantidade (sacas):</label>
+      <input type="number" id="quantidade" placeholder="Digite a quantidade">
+
+      <button onclick="calcularPreco()">Calcular</button>
+
+      <div id="resultado"></div>
+    </section>
+
+    <section class="info">
+      <h2>🌾 Produtos do Paraná</h2>
+      <p>
+        O Paraná é um dos maiores produtores agrícolas do Brasil,
+        com destaque para soja, milho, trigo e café.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Agro Paraná - Desenvolvido em HTML, CSS e JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
